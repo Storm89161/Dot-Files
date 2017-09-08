@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-  export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/storm/.oh-my-zsh
+export ZSH=/home/storm/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -57,20 +57,20 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-  export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-  export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-  if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='vim'
-  else
-    export EDITOR='mvim'
-  fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
-  export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -81,11 +81,19 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-  alias zshconfig="mate ~/.zshrc"
-  alias ohmyzsh="mate ~/.oh-my-zsh"
-  alias ll='ls -al'
-  alias cp='cp -iv'
-  alias mv='mv -iv'
-  alias sclear="clear && printf '\033[3J'"
-  alias rf='rm -rf'
-  alias rambox='/usr/bin/Rambox-0.5.10-x64.AppImage'
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll='ls -al'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias sclear="clear && printf '\033[3J'"
+alias rf='rm -rf'
+
+# Part of pre-oh-my-zsh .zshrc
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+zstyle :compinstall filename '/home/storm/.zshrc'
+autoload -Uz compinit
+compinit
