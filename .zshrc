@@ -24,7 +24,7 @@ export ARCHFLAGS="-arch x86_64"
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Aliases
-alias ll='ls -al'
+alias ll='ls -alh'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias sclear="clear && printf '\033[3J'"
