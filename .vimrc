@@ -28,3 +28,7 @@ colorscheme darkblue
 
 " Always show statusline
 set laststatus=2
+
+" Text wrapping
+set wrap
+set textwidth=80
