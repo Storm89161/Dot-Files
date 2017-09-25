@@ -31,4 +31,4 @@ set laststatus=2
 
 " Text wrapping
 set wrap
-set textwidth=80
+set textwidth=72
