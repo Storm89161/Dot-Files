@@ -17,8 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 set t_Co=256
 
 " Tabs
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " Look
