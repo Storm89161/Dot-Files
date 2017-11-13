@@ -60,7 +60,7 @@ set t_vb=
 " enable use of mouse for all modes
 set mouse=a
 
-" set the command window height to 2 lines, to avoid "preass <enter>..."
+" set the command window height to 2 lines, to avoid "press <enter>..."
 set cmdheight=2
 
 "displays line numbers on left
