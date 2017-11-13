@@ -8,6 +8,9 @@ syntax on         " syntax highlighting
 " set powerline
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim
 
+"
+" Vundle:
+"
 " set runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -18,6 +21,11 @@ Plugin 'VundleVim/Vundle.vim'
 " end of Vundle plugins:
 call vundle#end() 
 filetype plugin indent on
+
+"
+" Pathogen:
+"
+execute pathogen#infect()
 
 "
 " Required:
@@ -104,3 +112,8 @@ colorscheme darkblue
 
 " Always show statusline
 set laststatus=2
+
+" completion with C-n and C-p
+set complete-=i
+
+
