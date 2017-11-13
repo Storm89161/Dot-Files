@@ -2,7 +2,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
-tmux
 clear
 HISTFILE=~/.histfile
 HISTSIZE=1000
